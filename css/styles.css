@@ -2,9 +2,9 @@
   --accent-color: #2196f3;
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
-  --primary-bgc-white: #fff;
-  --secondary-bgc-white: #f5f4fa;
-  --primary-bgc-dark: #2f303a;
+  --primary-bgc-page: #fff;
+  --secondary-bgc-main: #f5f4fa;
+  --secondary-bgc-page: #2f303a;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
 }
@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--primary-font-family);
-  background-color: var(--primary-bgc-white);
+  background-color: var(--primary-bgc-page);
   color: var(--primary-text-color);
 }
 
@@ -34,14 +34,6 @@ body {
   color: var(--accent-color);
 }
 /*---LOGO---*/
-.color-logo {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -49,6 +41,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.color-logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 /*---HEADER---*/
 .menu-link {
@@ -64,12 +64,12 @@ body {
 .header-phone {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 .hero {
-  background-color: var(--primary-bgc-dark);
+  background-color: var(--secondary-bgc-page);
 }
 /*---HERO---*/
 .hero-title {
@@ -78,7 +78,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-bgc-page);
   text-align: center;
 }
 
@@ -86,13 +86,16 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
+  color: var(--primary-bgc-page);
   cursor: pointer;
   border: transparent;
+}
+.modal-button:hover, .modal-button:focus{
+  
+  background: #188ce8;
 }
 /*---MAIN---*/
 .main-title {
@@ -114,7 +117,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--secondary-bgc-white);
+  background-color: var(--secondary-bgc-main);
 }
 .work-title{
   font-weight: 700;
@@ -148,31 +151,26 @@ body {
 }
 /*--FOOTER--*/
 .footer-contacts {
-  background-color: var(--primary-bgc-dark);
+  background-color: var(--secondary-bgc-page);
 }
 .footer-address-map {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-bgc-page);
   font-style: normal;
 }
 .footer-address {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
 /*-----PORTFOLIO-----*/
 /*---NAV---*/
-.menu-link-active {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+
+
 /*---BUTTONS---*/
 .filter-button {
   font-weight: 500;
@@ -181,15 +179,23 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  background: #f5f4fa;
+  background: var(--secondary-bgc-main);
   border-radius: 4px;
   border: transparent;
 }
 .filter-button:focus,
 .filter-button:hover {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--primary-bgc-page);
 }
+.current-btn {
+  color:  var(--primary-bgc-page);;
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  }
 /*---MAIN---*/
 .list-item {
   font-weight: 700;
@@ -206,5 +212,14 @@ body {
   color: var(--secondary-text-color);
 }
 .white-logo{
-  color: #fff;
+  color: var(--primary-bgc-page);;
+}
+.current-item{
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  
+  color: var(--accent-color);
 }
